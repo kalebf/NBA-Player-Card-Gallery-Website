@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Player Profile | LeBron James</title>
+  <title>Holo-Glass Gallery | Grid</title>
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
@@ -20,18 +20,23 @@
       <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container detail-layout">
-    <a href="gallery.html" class="back-link">&larr; Back to Gallery</a>
+  <main class="container">
+    <section class="gallery-intro">
+      <h2>The Card Deck Grid</h2>
+      <p>Hover on any player to active the 3D skewing transforms and moving holographic layers. Click the cards to view deep career profiles.</p>
+    </section>
 
-    <div class="detail-split">
-      <!-- Centered Card Component -->
-      <div class="detail-card-zone">
-        <div class="nba-card large-card">
+    <!-- Balanced CSS Layout Grid -->
+    <section class="card-grid">
+      
+      <!-- CARD 1: LEBRON -->
+      <a href="player-lebron.html" class="card-link" style="--card-index: 1;">
+        <div class="nba-card" data-tooltip="Click for Profile!">
           <div class="holo-sheen"></div>
           <div class="card-badge">TOTY</div>
           <header class="card-top">
@@ -51,29 +56,57 @@
             </div>
           </section>
         </div>
-      </div>
+      </a>
 
-      <!-- Extended Stats and Highlights Profile -->
-      <div class="detail-profile">
-        <h2>LeBron James Profile</h2>
-        
-        <h3>Extended Stats</h3>
-        <div class="extended-stats-grid">
-          <div class="big-stat-box"><span class="big-stat-val">27.1</span><span class="big-stat-lbl">PPG</span></div>
-          <div class="big-stat-box"><span class="big-stat-val">7.5</span><span class="big-stat-lbl">RPG</span></div>
-          <div class="big-stat-box"><span class="big-stat-val">7.4</span><span class="big-stat-lbl">APG</span></div>
-          <div class="big-stat-box"><span class="big-stat-val">1.5</span><span class="big-stat-lbl">SPG</span></div>
-          <div class="big-stat-box"><span class="big-stat-val">50.6%</span><span class="big-stat-lbl">FG%</span></div>
+      <!-- CARD 2: STEPHEN CURRY -->
+      <a href="#" class="card-link" style="--card-index: 2;">
+        <div class="nba-card" data-tooltip="Click for Profile!">
+          <div class="holo-sheen"></div>
+          <div class="card-badge">TOTY</div>
+          <header class="card-top">
+            <div class="image-wrapper">
+              <img class="player-photo" src="https://imageio.forbes.com/specials-images/imageserve/627bdaec36beab21cd23ad21/0x0.jpg?format=jpg&crop=1003,1002,x921,y73,safe&height=416&width=416&fit=bounds.png" alt="Stephen Curry">
+            </div>
+            <h2 class="player-number">30</h2>
+          </header>
+          <section class="card-bottom">
+            <h1 class="player-name">Stephen Curry</h1>
+            <p class="player-position">G • GOLDEN STATE</p>
+            <div class="stats-grid">
+              <div class="stat-box"><span class="stat-val">94</span><span class="stat-lbl">PAC</span></div>
+              <div class="stat-box"><span class="stat-val">99</span><span class="stat-lbl">SHO</span></div>
+              <div class="stat-box"><span class="stat-val">97</span><span class="stat-lbl">PAS</span></div>
+              <div class="stat-box"><span class="stat-val">99</span><span class="stat-lbl">DRI</span></div>
+            </div>
+          </section>
         </div>
+      </a>
 
-        <h3>Career Highlights</h3>
-        <ul class="highlights-list">
-          <li>NBA All-Time Leading Regular Season Scorer.</li>
-          <li>4-time NBA Champion & 4-time Finals MVP winner.</li>
-          <li>First player ever to accumulate 40,000 career points.</li>
-        </ul>
-      </div>
-    </div>
+      <!-- CARD 3: GIANNIS -->
+      <a href="#" class="card-link" style="--card-index: 3;">
+        <div class="nba-card" data-tooltip="Click for Profile!">
+          <div class="holo-sheen"></div>
+          <div class="card-badge">TOTY</div>
+          <header class="card-top">
+            <div class="image-wrapper">
+              <img class="player-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0zVRiR5fptnoKWp5vtswihRM32kWanZ-ig&s" alt="Giannis Antetokounmpo">
+            </div>
+            <h2 class="player-number">34</h2>
+          </header>
+          <section class="card-bottom">
+            <h1 class="player-name">Giannis A.</h1>
+            <p class="player-position">F • MILWAUKEE</p>
+            <div class="stats-grid">
+              <div class="stat-box"><span class="stat-val">98</span><span class="stat-lbl">PAC</span></div>
+              <div class="stat-box"><span class="stat-val">92</span><span class="stat-lbl">SHO</span></div>
+              <div class="stat-box"><span class="stat-val">91</span><span class="stat-lbl">PAS</span></div>
+              <div class="stat-box"><span class="stat-val">96</span><span class="stat-lbl">DRI</span></div>
+            </div>
+          </section>
+        </div>
+      </a>
+
+    </section>
   </main>
 
   <footer>
